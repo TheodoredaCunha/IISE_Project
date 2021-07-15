@@ -9,42 +9,60 @@
         <div id="title">
 			<center>
 				<h2>Machine Learning</h2>
-				<button id="darkModeButton" onclick="darkModeToggle()">Dark Mode</button>
+				<button id="darkModeButton" onclick="darkModeToggle()">Light Mode</button>
 			</center>
         </div>
         
     </head>
 
     <body>
-		<div id="space"></div>
+		<!-- Pop Up Box (Intially Hidden) -->
+		<div>
+				<div id="backgroundDiv" onclick="hide()"></div>
+				<div id="popUpBox">
+				<button onclick="hide()">Exit</button>
+					<center><h1 id="expandedDivTitle"></h1></center>
+					<p id="hidden_content"></p>
+				</div>
+		</div>
+	
+		<!-- Introduction to Website -->
+		<div id="space"><!--Space as large as header--></div>
         <center>
             <table id="content_table">
                 <tr>
                     <td>
                         <div id="introduction" class="content_div" style="">
-                            <h3>What is machine learning?</h3>
+                            <h3>How does Machine Learning Work</h3>
                             <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor </br>
-                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud </br>
-                                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure </br>
-                                dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </br>
-                                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit </br>
-                                anim id est laborum.
+								There are three main steps when it comes to machine learning. The first step is deciding </br>
+								the estimated pattern of the given data. The machine learning algorithms will be given and input </br>
+								data that could be labelled or unlabelled and it is the machine learning algorithm's job to predict the </br>
+								data. Next, the error function checks the accuracy of the prediction of the model sometimes by comparing it </br>
+								to an already known model, if a model is given. Lastly, the model of the training data is optimised by changing </br>
+								the weights in order to reach the accuracy threshold between the estimated model and the known model.
                             </p>
+							
+							</br>
+							<p onclick="popUp(0)" id="map_link"><u>Click to see map of Machine Learning</u></p>
 
                         </div>
                     </td>
     
                     <td>
                         <div id="introduction2" class="content_div" style="">
-                            <h3>What is discussed in this website?</h3>
+                            <h3>Machine Learning Methods</h3>
                             <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor </br>
-                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud </br>
-                                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure </br>
-                                dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </br>
-                                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit </br>
-                                anim id est laborum.
+								Machine learning is separated into three types of methods: supervised, semi-supervised, </br>
+								and unsupervised. Supervised machine learning is the process of machine learning where labeled </br>
+								training data sets are used in order to avoid overfitting or underfitting due to its ability to adjust</br>
+								its weights. This type is used in neural networks, linear regression, naïve bayes, etc. </br>
+								Unsupervised machine learning, unlike supervised machine learning, uses unlabeled training data </br>
+								to perform its task. Unsupervised machine learning is used to find groupings and patterns without human</br>
+								intervention. Examples of unsupervised machine learning are principal component analysis and k-clustering.</br>
+								Semi-supervised machine learning is the in-between method of supervised and unsupervised machine learning </br>
+								where the labeled data set is used to classify from the larger unlabeled data set. This method is useful </br>
+								for when there isn't enough labeled data to train the supervised algorithm.
                             </p>
 
                         </div>                    
@@ -54,97 +72,93 @@
         </center>
 		
 		
-		
+	<!--contents -->
 	<div id="contents">
 		<div class="subtopic">
-			<h1 class="subtopic_title">Subtopic1</h1>
-			<div class="subtopic_contents">
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor  incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud </br>
-				exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </br>
-				Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </br>		
-				</br>
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor  incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud </br>
-				exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </br>
-				Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </br>
-				</br>
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor  incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud </br>
-				exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </br>
-				Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </br>	
-				</br>
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor  incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud </br>
-				exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </br>
-				Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </br>		
-				</br>
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor  incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud </br>
-				exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </br>
-				Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </br>
-				</br>
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor  incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud </br>
-				exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </br>
-				Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </br>	
+			<h1 class="subtopic_title">Supervised Learning</h1>
+			<div class="subtopic_contents" onclick="popUp(1)">
+				Supervised learning happens when there is a clear target for each output. The neural network will attempt to learn the patterns and adjusts its weights during training in order</br>
+				to be able to acquire the correct target for each input.<b> Click to show more information...</b>
 			</div>
 		</div>
 		
 		<div class="subtopic">
-			<h1 class="subtopic_title">Subtopic2</h1>
-			<div class="subtopic_contents">
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor  incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud </br>
-				exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </br>
-				Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </br>		
-				</br>
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor  incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud </br>
-				exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </br>
-				Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </br>
-				</br>
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor  incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud </br>
-				exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </br>
-				Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </br>	
-				</br>
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor  incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud </br>
-				exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </br>
-				Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </br>		
-				</br>
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor  incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud </br>
-				exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </br>
-				Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </br>
-				</br>
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor  incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud </br>
-				exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </br>
-				Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </br>	
+			<h1 class="subtopic_title">Semi-supervised Learning</h1>
+			<div class="subtopic_contents" onclick="popUp(2)">
+				As the name suggests, semi-supervised learning is a form of machine learning that cannot be categorized as either supervised or unsupervised, since it shares qualities of both </br>
+				styles to a certain extent. To be specific, this method uses both labeled and unlabeled data in the dataset. <b> Click to show more information...</b>
 			</div>
 			
 		</div>
 		
 		<div class="subtopic">
-			<h1 class="subtopic_title">Subtopic3</h1>
-			<div class="subtopic_contents">
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor  incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud </br>
-				exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </br>
-				Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </br>		
-				</br>
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor  incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud </br>
-				exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </br>
-				Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </br>
-				</br>
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor  incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud </br>
-				exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </br>
-				Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </br>	
-				</br>
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor  incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud </br>
-				exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </br>
-				Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </br>		
-				</br>
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor  incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud </br>
-				exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </br>
-				Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </br>
-				</br>
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor  incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud </br>
-				exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </br>
-				Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </br>	
+			<h1 class="subtopic_title">Unsupervised Learning</h1>
+			<div class="subtopic_contents" onclick="popUp(3)">
+				Unsupervised learning is the exact opposite of supervised learning. This method is useful for clustering or grouping problems. The reason it is called "unsupervised" is bacause, unlike</br>
+				in supervised learning, unsupervised learning does not have any entity to tell it that it is predicting wrong results. In other words, unsupervised learning does not require any labelled data.</br>
+				<b> Click to show more information...</b>				
 			</div>			
 		</div>
 		
 	</div>
 	
     </body>
+	
+	
+	<!--contents for popup boxes -->
+	<!--hidden from user but accessible by JavaScript -->
+	<p id="text_content1" hidden>
+		Supervised learning happens when there is a clear target for each output. The neural network will attempt to learn the patterns and adjusts its weights during training in order
+		to be able to acquire the correct target for each input. Supervised learning requires the programmer to provide a dataset of inputs and outputs. To give an example, if we want to
+		predict a handwritten <i>kanji</i> character, we can use dataset of handwritten <i>kanji</i> characters paired with the text (readable by the computer) of that <i>kanji</i>. 
+		Here, the input is the handwritten <i>kanji</i> while the target/output is the text version of that character.</br>
+		<img class="images" src="images/image1.png" width=700 height=350></img></br>
+		Image credits: https://bigdata-madesimple.com/machine-learning-explained-understanding-supervised-unsupervised-and-reinforcement-learning/</br>
+		</br>
+		During learning, the neural network will attempt to predict the target of an input. Since the network has not learned anything yet, the result has a high chance to be completely
+		innaccurate. From here, the network will calculate something called a <b>loss</b>, which denotes wrong was the network. Specifically, a numerical representation of how far away
+		the predicted answer was from the target value will be generated. This number will be used by the neural network to know how to improve. From this loss value, the network adjusts
+		its weights. The adjusted weight values should help the neural network to yield better results. This process is repeated over and over again until the programmer decides (usually 
+		the amount of iterations, or <b>epochs</b> are set before training) to stop. The final state of the neural network should be able to predict an input's targets relativelt accurately.
+	</p>
+	
+	<p id="text_content2" hidden>
+		As the name suggests, semi-supervised learning is a form of machine learning that cannot be categorized as either supervised or unsupervised, since it shares qualities of both styles
+		to a certain extent. To be specific, this method uses both labeled and unlabeled data in the dataset. Semi-supervised learning is useful for doing machine learning operations with a
+		smaller dataset. Gathering data and labelling them might take a long time, and in some cases, may cost a lot of money. To work around this, a smaller data set is used in conjunction 
+		with unlabeled data. </br>
+		</br>
+		Specifically, the entire dataset can be categorized into groups using unsupervized learning. Then, in theory, data points that is part of the same group should also have similar target
+		values. From here, the labels for the unlabelled data points can be acquired (though it might not be totally precise). Semi-supervised learning requires the dataset to have a majority 
+		of unlabelled data since it will be used for the unsupervised learning part of semi-supervised learning. It is necessary for the neural network to be able to perform unsupervised learning
+		accurately before inferring labels for data.
+	</p>
+	
+	<p id="text_content3" hidden>
+		Unsupervised learning is the exact opposite of supervised learning. This method is useful for clustering or grouping problems. The reason it is called "unsupervised" is bacause, unlike
+		in supervised learning, unsupervised learning does not have any entity to tell it that it is predicting wrong results. In other words, unsupervised learning does not require any labelled data. 
+		Instead, it simply looks at all the data and attempt to find recurrent patterns in it. After acquiring the parrterns, the neural network can easily categorize in which group or cluster
+		does a data point belong to. The program will not have any information on what the patterns and groups signify and it is up to the human operator to analyze the results. </br>
+		</br>
+		<img class="images" src="images/image2.png" width=700 height=350></img></br>
+		Image credits: https://bigdata-madesimple.com/machine-learning-explained-understanding-supervised-unsupervised-and-reinforcement-learning/</br>
+		</br>
+		For instance, if a programmer wants to create a machine learning program that differentiates dark colors from bright
+		ones, then an unsupervised machine learning method may be the most useful. The dataset here, does not need to contain labels that tells if the color is dark or bright. The dataset just requires
+		there to be complete specifications of each color (e.g. red, gree, and blue components).</br>
+		
+	</p>
+	
+	<p id="text_content0" hidden>
+		<img class="images" src="images/image3.jpg" width=700 height=350></img></br>
+		Image credits: https://bigdata-madesimple.com/machine-learning-explained-understanding-supervised-unsupervised-and-reinforcement-learning/
+	</p>
+	
+	<div id="sources">
+		Website by: Theodore Matthew Patawari and Teepakorn Kamolkrit</br>
+		</br>
+		Sources:</br> 
+		https://www.ibm.com/cloud/learn/machine-learning</br>
+		https://jrodthoughts.medium.com/understanding-semi-supervised-learning-a6437c070c87</br>
+	</div>
 </html>
